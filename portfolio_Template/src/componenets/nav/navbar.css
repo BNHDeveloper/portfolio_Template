@@ -1,0 +1,233 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 1.2rem 0;
+  background: var(--white);
+  box-shadow: var(--shadow-md);
+  font-family: 'Inter', sans-serif;
+  transition: all var(--transition-normal);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-text {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--orange-primary);
+  text-decoration: none;
+  letter-spacing: -0.5px;
+  transition: color var(--transition-normal);
+}
+
+.logo-text:hover {
+  color: var(--orange-dark);
+}
+
+.nav-menu {
+  display: flex;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.nav-link {
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--text-dark);
+  text-decoration: none;
+  transition: all var(--transition-normal);
+  padding: 0.5rem 0;
+  position: relative;
+}
+
+.nav-link:hover {
+  color: var(--orange-primary);
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--orange-gradient);
+  transition: width var(--transition-normal);
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.nav-buttons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Download CV Button */
+.btn-download {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: transparent;
+  color: var(--orange-primary);
+  border: 2px solid var(--orange-primary);
+  padding: 0.6rem 1.2rem;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all var(--transition-normal);
+  text-decoration: none;
+}
+
+.btn-download:hover {
+  background: var(--orange-primary);
+  color: var(--white);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-orange);
+}
+
+.hamburger {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--text-dark);
+  background: none;
+  border: none;
+  padding: 0.5rem;
+  transition: color var(--transition-normal);
+}
+
+.hamburger:hover {
+  color: var(--orange-dark);
+}
+
+/* Mobile Download Button */
+.mobile-download-btn {
+  display: none;
+}
+
+.btn-download-mobile {
+  display: none;
+}
+
+/* Active link */
+.nav-link.active {
+  color: var(--orange-primary);
+  font-weight: 600;
+}
+
+.nav-link.active::after {
+  width: 100%;
+}
+
+
+@media (max-width: 998px) {
+  .nav-menu {
+    gap: 1.7rem;
+  }
+  
+  .nav-buttons {
+    gap: 0.8rem;
+  }
+  
+  .btn-download,
+  .btn-contact {
+    padding: 0.6rem 1rem;
+    font-size: 0.85rem;
+  }
+
+    .navbar {
+    padding: 1rem 0;
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: 70px;
+    left: -100%;
+    width: 100%;
+    height: calc(100vh - 70px);
+    background: var(--white);
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 2rem;
+    transition: left var(--transition-normal);
+    box-shadow: var(--shadow-lg);
+    gap: 1.5rem;
+    z-index: 999;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .nav-link {
+    font-size: 1.1rem;
+    padding: 0.8rem 0;
+  }
+
+  /* Hide desktop buttons on mobile */
+  .nav-buttons {
+    display: none;
+  }
+
+  /* Show mobile download button */
+  .mobile-download-btn {
+    display: block;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .btn-download-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+    background: transparent;
+    color: var(--orange-primary);
+    border: 2px solid var(--orange-primary);
+    padding: 0.8rem 1.5rem;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all var(--transition-normal);
+    text-decoration: none;
+    text-align: center;
+  }
+
+  .btn-download-mobile:hover {
+    background: var(--orange-primary);
+    color: var(--white);
+  }
+
+  .hamburger {
+    display: block;
+    position: relative;
+    z-index: 1000;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-text {
+    font-size: 1.5rem;
+  }
+  
+  .nav-menu {
+    padding: 1.5rem;
+  }
+  
+  .btn-download-mobile {
+    padding: 0.7rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}
