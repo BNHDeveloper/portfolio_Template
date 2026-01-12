@@ -21,34 +21,24 @@ const Footer = () => {
   const socialLinks = [
     { 
       name: 'facebook', 
-      href: 'https://facebook.com/easycodedz', 
+      href: 'https://www.facebook.com/easycode.dz', 
       icon: <FaFacebookF />
     },
     { 
-      name: 'twitter', 
-      href: 'https://twitter.com/easycodedz', 
-      icon: <FaTwitter />
-    },
-    { 
       name: 'instagram', 
-      href: 'https://instagram.com/easycodedz', 
+      href: 'https://www.instagram.com/easy_code_dz/', 
       icon: <FaInstagram />
     },
     { 
       name: 'linkedin', 
-      href: 'https://linkedin.com/company/easycodedz', 
+      href: 'https://www.linkedin.com/in/nour-el-houda-boumelha-791514287/', 
       icon: <FaLinkedinIn />
     },
     { 
       name: 'github', 
-      href: 'https://github.com/easycodedz', 
+      href: 'https://github.com/BNHDeveloper', 
       icon: <FaGithub />
     },
-    { 
-      name: 'dribbble', 
-      href: 'https://dribbble.com/easycodedz', 
-      icon: <FaDribbble />
-    }
   ];
 
   const currentYear = new Date().getFullYear();

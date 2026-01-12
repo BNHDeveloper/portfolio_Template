@@ -22,7 +22,7 @@
 
 /* "Hi I am" */
 .hero-greeting {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: 500;
   color: #666666;
   margin-bottom: 0.8rem;
@@ -32,7 +32,7 @@
 
 /* "Boumelha Nour Elhouda"*/
 .hero-name {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   font-weight: 900;
   color: var(--orange-primary);
   margin-bottom: 0.5rem;
@@ -42,7 +42,7 @@
 
 /* "Full Stack Developer" */
 .hero-title {
-  font-size: 3rem;
+  font-size: 2.1rem;
   font-weight: 700;
   color: #000000;
   margin-bottom: 2.5rem;
@@ -58,7 +58,7 @@
 
 /* Description */
 .hero-description {
-  font-size: 1.05rem;
+  font-size: .9rem;
   line-height: 1.7;
   color: #555555;
   margin-bottom: 2.5rem;
@@ -76,7 +76,7 @@
 
 /* Hire Me Button  */
 .hero-buttons {
-  margin-top: 3rem;
+  margin-top: 1.6rem;
 }
 
 .btn-primary {
@@ -114,9 +114,9 @@
 
 .profile-image {
   position: relative;
-  width: 100%;
+  width: 90%;
   min-height: 200px;
-  height: 500px;
+  height: 400px;
   max-height: 500px;
   z-index: 2;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
@@ -131,13 +131,13 @@
     position: absolute;
     width: 100%;
     height: auto;
-    top: -22%;
-    left: -3%;
+    top: -15%;
+    left: 6%;
     display: block;
 }
 
 .image-placeholder img {
-  width: 110%;
+  width: 90%;
   height: auto;
   display: block;
   border-radius: 4px;
