@@ -39,7 +39,7 @@
 .nav-link {
   font-weight: 500;
   font-size: 1rem;
-  color: var(--text-dark);
+  color: var(--text-dark) !important;
   text-decoration: none;
   transition: all var(--transition-normal);
   padding: 0.5rem 0;
@@ -47,7 +47,7 @@
 }
 
 .nav-link:hover {
-  color: var(--orange-primary);
+  color: var(--orange-primary) !important;
 }
 
 .nav-link::after {

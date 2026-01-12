@@ -13,7 +13,7 @@ const Navbar = () => {
     { name: 'Testimonials', href: '#testimonials' },
     { name: 'Contact', href: '#contact' },
   ];
-
+ 
   return (
     <nav className="navbar">
       <div className="container nav-container">
