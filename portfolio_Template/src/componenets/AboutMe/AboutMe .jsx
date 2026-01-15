@@ -5,10 +5,10 @@ import aboutImage from '../../assets/avatar.png';
 const AboutMe = () => {
   // Skills data with percentages
   const skills = [
-    { name: 'UI/UX Design', percentage: 90 },
-    { name: 'Web Design', percentage: 85 },
-    { name: 'Mobile Design', percentage: 80 },
-    { name: 'Graphic Design', percentage: 75 },
+    { name: 'Problem Solving', percentage: 90 },
+    { name: 'System Design', percentage: 80 },
+    { name: 'Web Development', percentage: 85 },
+    { name: 'Technical Documentation', percentage: 75 }
   ];
 
   return (
@@ -33,8 +33,7 @@ const AboutMe = () => {
           
           <div className="about-text">
             <p className="about-description">
-              Lorem ipsum dolor sit amet consectetur. Tristique amet sed mosso nibh lectus netus in. 
-              Aliquet donec moroi convollis pretium. Turpis tempus pharetro
+              Full-Stack Developer with one year of experience designing, developing, and deploying dynamic web applications. Proficient in both front-end and back-end development with emphasis on responsive design, RESTful APIs, and modern frameworks.
             </p>
             
             <div className="skills-container">

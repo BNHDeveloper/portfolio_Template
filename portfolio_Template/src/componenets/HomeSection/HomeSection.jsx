@@ -21,11 +21,8 @@ const HomeSection = () => {
             </h2>
             
             <p className="hero-description">
-              System Support, Troubleshooting, and Automation. Skilled in documentation management, 
-              cross-functional coordination, and technical problem resolution. Passionate about software 
-              development and currently expanding skills in Java, web technologies, and application 
-              lifecycle processes. Highly motivated to contribute to full-stack development, agile team 
-              collaboration.
+              Full-Stack Developer | 2+ Year Experience | Web Applications & Modern Frameworks
+              Full-Stack Developer with two year of experience designing, developing, and deploying dynamic web applications. Proficient in both front-end and back-end development
             </p>
             
             <div className="hero-divider"></div>

@@ -39,7 +39,7 @@
 .nav-link {
   font-weight: 500;
   font-size: 1rem;
-  color: var(--text-dark) !important;
+  color: var(--text-dark);
   text-decoration: none;
   transition: all var(--transition-normal);
   padding: 0.5rem 0;

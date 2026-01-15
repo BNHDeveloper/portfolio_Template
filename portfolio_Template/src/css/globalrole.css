@@ -82,7 +82,6 @@ p {
 
 a {
   text-decoration: none;
-  color: inherit;
   transition: var(--transition-normal);
 }
 

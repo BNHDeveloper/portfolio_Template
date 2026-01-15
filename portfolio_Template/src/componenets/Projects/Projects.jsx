@@ -1,41 +1,46 @@
 import React, { useState } from 'react';
 import './Projects.css';
-import img from '../../assets/portfolio.png';
-import img1 from '../../assets/portfolio1.png';
-import img2 from '../../assets/portfolio2.png';
+import img from '../../assets/image_2.png';
+import img0 from '../../assets/image_1.png';
+import img1 from '../../assets/portfolio.png';
+import img2 from '../../assets/image_3.jpg';
 
 const Projects = () => {
 
-  const categories = ['All', 'Web Design', 'App Design', 'Graphic Design'];
+  const categories = ['All', 'Website', 'Android Application', 'Automation'];
 
   const projects = [
     { 
       id: 1, 
-      title: 'AirCalling Landing Page Design', 
-      category: 'Web Design',
-      description: 'Lorem ipsum dolor sit amet consectetur. Mollis erat duis aliquam mauris est risus lectus.',
-      image: img
+      title: 'Portfolio Website Design', 
+      category: 'Website',
+      description: 'react portfolio website to showcase my projects and skills',
+      image: img0,
+      link:"https://github.com/BNHDeveloper/Portfolio/tree/main"
     },
     { 
       id: 2, 
-      title: 'Business Landing Page Design', 
-      category: 'Web Design',
-      description: 'Lorem ipsum dolor sit amet consectetur. Mollis erat duis aliquam mauris est risus lectus.',
-      image: img1
+      title: 'Dashboard Design', 
+      category: 'Website',
+      description: 'admin dashboard design for managing users, analytics, and content',
+      image: img1,
+      link:""
+    },
+    { 
+      id: 3, 
+      title: 'Food E-Commerce Flutter App', 
+      category: 'Android Application',
+      description: ' e-commerce mobile application using Flutter and Dart',
+      image: img,
+      link:"https://github.com/BNHDeveloper/ecomerce_app"
     },
     { 
       id: 4, 
-      title: 'Mobile App Design', 
-      category: 'App Design',
-      description: 'Lorem ipsum dolor sit amet consectetur. Mollis erat duis aliquam mauris est risus lectus.',
-      image: img
-    },
-    { 
-      id: 6, 
-      title: 'Brand Identity Design', 
-      category: 'Graphic Design',
-      description: 'Lorem ipsum dolor sit amet consectetur. Mollis erat duis aliquam mauris est risus lectus.',
-      image: img2
+      title: 'Sahla Dz Booking Platform', 
+      category: 'Website',
+      description: 'Booking platform for accommodation and travel experiences in Algeria',
+      image: img2,
+      link:"https://github.com/BNHDeveloper/SahlaDz"
     },
   ];
 
@@ -51,8 +56,7 @@ const Projects = () => {
         <div className="section-title">
           <h2>My Projects</h2>
           <p className="section-subtitle">
-            Lorem ipsum dolor sit amet consectetur. Mollis erat duls aliquam mouris est risus
-            lactus. Phasallus consequat urna tellus
+            Here are some of the projects I've built and worked on. Each one represents different skills and technologies I've used to solve real problems.
           </p>
         </div>
         
@@ -82,7 +86,9 @@ const Projects = () => {
                   }}
                 />
                 <div className="project-overlay">
-                  <button className="view-btn">View Project</button>
+                  <a href={project.link} target="_blank" rel="noopener noreferrer">
+                    <button className="view-btn">View Project</button>
+                  </a>
                 </div>
               </div>
               <div className="project-content">

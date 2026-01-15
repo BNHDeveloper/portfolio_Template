@@ -2,27 +2,27 @@ import './Services.css';
 
 const Services = () => {
   const services = [
-    {
-      title: 'UI/UX',
-      description: 'Lorem ipsum dolor sit amet consectetur. Morbi diam nisi nam diam interdum.',
-      icon: '🎨' 
-    },
-    {
-      title: 'Web Design',
-      description: 'Lorem ipsum dolor sit amet consectetur. Morbi diam nisi nam diam interdum.',
-      icon: '💻'
-    },
-    {
-      title: 'App Design',
-      description: 'Lorem ipsum dolor sit amet consectetur. Morbi diam nisi nam diam interdum.',
-      icon: '📱'
-    },
-    {
-      title: 'Graphic Design',
-      description: 'Lorem ipsum dolor sit amet consectetur. Morbi diam nisi nam diam interdum.',
-      icon: '✏️'
-    }
-  ];
+  {
+    title: 'Website',
+    description: 'Design and build responsive websites tailored to your specific business needs and goals.',
+    icon: '💻'
+  },
+  {
+    title: 'Automation',
+    description: 'Develop automated workflows and systems to increase efficiency and reduce manual work.',
+    icon: '🤖'
+  },
+  {
+    title: 'Programming Education',
+    description: 'Teach web development, programming fundamentals, and technical skills to learners.',
+    icon: '🎓'
+  },
+  {
+    title: 'Books',
+    description: 'Author educational content that makes complex topics accessible to everyone.',
+    icon: '✍️'
+  }
+];
 
   return (
     <section id="services" className="services-section">
@@ -30,8 +30,7 @@ const Services = () => {
         <div className="section-title">
           <h2>Services</h2>
           <p className="section-subtitle">
-            Lorem ipsum dolor sit amet consectetur. Tristique amet sed massa nibh lectus netus in. 
-            Aliquat donac marbi convallis pratium.
+            I provide four key services to help individuals and businesses succeed in the digital
           </p>
         </div>
         
