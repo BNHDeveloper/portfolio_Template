@@ -1,8 +1,6 @@
-import { useState } from 'react';
 import './TestimonialsContact.css';
 
 const TestimonialsContact = () => {
-  const [email, setEmail] = useState('');
 
   const testimonials = [
     {
@@ -12,13 +10,6 @@ const TestimonialsContact = () => {
       position: "Health Care Admin"
     }
   ];
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log('Email submitted:', email);
-    setEmail('');
-    alert('Thank you for your interest! We\'ll contact you soon.');
-  };
 
   return (
     <div id="testimonials">
@@ -59,19 +50,42 @@ const TestimonialsContact = () => {
               </p>
             </div>
             
-            <form className="contact-form" onSubmit={handleSubmit} action="https://formsubmit.co/boumelhanourelhouda@gmail.com" method='POST'>
+            <form 
+              className="contact-form" 
+              // onSubmit={handleSubmit} 
+              action="https://formsubmit.co/nour.dz.pro@gmail.com" 
+              method="POST"
+            >
+              {/* Hidden fields for FormSubmit configuration */}
+              <input type="hidden" name="_subject" value="New Contact Form Submission!" />
+              <input type="hidden" name="_template" value="table" />
+              <input type="hidden" name="_autoresponse" value="Thank you for contacting us! We'll get back to you soon." />
+              <input type="hidden" name="_next" value="https://easycodedz-pro.web.app/" />
+              <input type="hidden" name="_captcha" value="false" />
+              
               <div className="form-group">
                 <input
-                  type="email"
-                  placeholder="Enter Your Email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
+                  type="text"
+                  name="name" 
+                  placeholder="Enter Your Name"
                   required
                   className="email-input"
                 />
               </div>
-              <button type="submit" className="contact-btn">
-                GET IN TOUCH
+              <div className="form-group">
+                <input
+                  type="email"
+                  name="email" 
+                  placeholder="Enter Your Email"
+                  required
+                  className="email-input"
+                />
+              </div>
+              <button 
+                type="submit" 
+                className="contact-btn"
+              >
+                {'GET IN TOUCH'}
               </button>
             </form>
           </div>

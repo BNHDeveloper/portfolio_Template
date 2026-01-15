@@ -7,7 +7,7 @@ import img2 from '../../assets/image_3.jpg';
 
 const Projects = () => {
 
-  const categories = ['All', 'Website', 'Android Application', 'Automation'];
+  const categories = ['All', 'Website', 'App', 'Automation'];
 
   const projects = [
     { 
@@ -29,7 +29,7 @@ const Projects = () => {
     { 
       id: 3, 
       title: 'Food E-Commerce Flutter App', 
-      category: 'Android Application',
+      category: 'App',
       description: ' e-commerce mobile application using Flutter and Dart',
       image: img,
       link:"https://github.com/BNHDeveloper/ecomerce_app"
