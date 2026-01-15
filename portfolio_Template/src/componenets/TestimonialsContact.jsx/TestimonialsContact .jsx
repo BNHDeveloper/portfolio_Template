@@ -6,10 +6,10 @@ const TestimonialsContact = () => {
 
   const testimonials = [
     {
-      quote: "In enim cursus odio neris id tellus arcu elementum convollis",
-      text: "Lorem ipsum dolor sit amet consectetur. In enim cursus odio accumient. Id leo urna velit neque morita id tellus arcu condimentum. Augue dictum dolor elementum convollis dignissim molestuada commodo ultrices.",
-      name: "Name",
-      position: "CEO"
+      quote: "Doctor Booking System",
+      text: "A comprehensive healthcare platform that connects patients with medical professionals. This system enables online appointment scheduling, real-time doctor availability checks, automated reminders, and secure patient management. Developed with modern web technologies to improve healthcare accessibility and streamline medical practice operations.",
+      name: "Esma Entreprise",
+      position: "Health Care Admin"
     }
   ];
 
@@ -53,14 +53,13 @@ const TestimonialsContact = () => {
         <div className="container">
           <div className="contact-content">
             <div className="contact-text">
-              <h2 className="contact-title">Let's Design Together</h2>
+              <h2 className="contact-title">Let's Build Something Amazing</h2>
               <p className="contact-subtitle">
-                Lorem ipsum dolor sit amet consectetur. Tristique amet sed mosse nibh lectus
-                nexus in. Aliquet donec mortoi convollis pretium
+                We turn ideas into powerful digital experiences. From sleek websites to robust applications, we partner with you at every step of the journey.
               </p>
             </div>
             
-            <form className="contact-form" onSubmit={handleSubmit}>
+            <form className="contact-form" onSubmit={handleSubmit} action="https://formsubmit.co/boumelhanourelhouda@gmail.com" method='POST'>
               <div className="form-group">
                 <input
                   type="email"
@@ -72,7 +71,7 @@ const TestimonialsContact = () => {
                 />
               </div>
               <button type="submit" className="contact-btn">
-                Contact Me
+                GET IN TOUCH
               </button>
             </form>
           </div>

@@ -1,10 +1,8 @@
 import { 
   FaFacebookF, 
-  FaTwitter, 
   FaInstagram, 
   FaLinkedinIn, 
   FaGithub, 
-  FaDribbble 
 } from 'react-icons/fa';
 import './Footer.css';
 
@@ -74,7 +72,7 @@ const Footer = () => {
           <ul className="nav-list">
             {navItems.map((item, index) => (
               <li key={index} className="nav-item">
-                <a href={item.href} className="nav-link">
+                <a href={item.href} className="nav-links">
                   {item.label}
                 </a>
               </li>
